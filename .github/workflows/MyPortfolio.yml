@@ -35,3 +35,12 @@ jobs:
                   sleep 5s;
                   echo 'Running check for vulnerablities... 3'
                   sleep 5s;
+    deploy:
+        name: Ready For Deployment
+        runs-on: ubuntu-latest
+        needs: [lintTest, securtyCheck]
+        steps:
+            - name: Install Dependecies
+              run: |
+                  echo 'Deployment in progress'
+                  sleep 5s;
