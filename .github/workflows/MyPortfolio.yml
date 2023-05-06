@@ -1,0 +1,23 @@
+name: MYPortfolio
+
+on:
+    push:
+        branches: [release, dev]
+
+jobs:
+    lintTest:
+        name: LintCode
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone Respository
+              uses: actions/checkout@v2
+            - name: Install Dependecies
+              run: |
+                  echo 'Running installing dependecies...'
+                  npm install
+            - name: Run Linting
+              run: |
+                  echo 'Running linting tests...'
+                  npm run lint
+              env:
+                  CI: true
