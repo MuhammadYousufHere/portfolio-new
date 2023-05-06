@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# npx tsc --noEmit && npx eslint --fix . && npx prettier --write .
+
+# only format staged
+npx lint-staged
+
+# this command ensures that there are no typescript errors with tsc. running eslint to ensure no linting error and formatting our code with prettier by runnint prettier --write .
