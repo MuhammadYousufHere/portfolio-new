@@ -39,8 +39,18 @@ module.exports = {
     ],
 
     rules: {
-        '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+        '@typescript-eslint/consistent-type-imports': [
+            'warn',
+            {
+                prefer: 'type-imports',
+                fixStyle: 'inline-type-imports',
+            },
+        ],
+        'global-require': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+        'import/no-extraneous-dependencies': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-filename-extension': [
             1,
