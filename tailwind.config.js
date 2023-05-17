@@ -25,6 +25,7 @@ module.exports = {
          },
          colors: {
             gray: colors.stone,
+            subHead: '#34495e',
          },
          keyframes: ({ theme }) => ({
             mutation: {
