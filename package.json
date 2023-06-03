@@ -6,6 +6,7 @@
       "name": "muhammad_yousuf",
       "url": "https://twitter.com/myousuf_here"
    },
+   "description": "Personal website",
    "scripts": {
       "dev": "next dev",
       "build": "next build",

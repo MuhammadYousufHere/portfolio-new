@@ -1,0 +1,189 @@
+/* .css-im4rd3.shown {
+   opacity: 1;
+   transform: translateY(0px);
+}
+.css-im4rd3 {
+   padding: 0px;
+   opacity: 0;
+   transform: translateY(8px);
+   transition: transform 1s ease 1114ms, opacity 1s ease 1114ms;
+   grid-area: span 1 / span 8 / auto / auto;
+}
+.css-zzra2c {
+   border-radius: 24px;
+   overflow: hidden;
+   height: 100%;
+   transition-duration: 300ms;
+   background-color: hsla(0, 0%, 100%, 0.02);
+   position: relative;
+   overflow: visible;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row-reverse;
+   -ms-flex-direction: row-reverse;
+   flex-direction: row-reverse;
+   box-sizing: border-box;
+   -webkit-text-decoration: none;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid transparent;
+}
+.css-wxr4ww {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-box-pack: start;
+   -ms-flex-pack: start;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   padding: 24px 30px;
+   overflow: hidden;
+   padding-left: 0;
+}
+.css-zzra2c::before {
+   content: ' ';
+   z-index: -2;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(
+      90.56deg,
+      #27061a,
+      #ff6363 29.69%,
+      #9b4dff 52.6%,
+      #100321 98.44%
+   );
+   border-radius: 12px;
+   -webkit-transition: -webkit-transform 400ms ease-in-out,
+      opacity 400ms ease-in-out, background-color 400ms ease-in-out;
+   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out,
+      background-color 400ms ease-in-out;
+   opacity: 0;
+}
+
+.css-zzra2c:after {
+   content: ' ';
+   z-index: -2;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(
+      90.56deg,
+      #27061a,
+      #ff6363 29.69%,
+      #9b4dff 52.6%,
+      #100321 98.44%
+   );
+   border-radius: 12px;
+   -webkit-transition: -webkit-transform 400ms ease-in-out,
+      opacity 400ms ease-in-out, background-color 400ms ease-in-out;
+   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out,
+      background-color 400ms ease-in-out;
+   opacity: 0;
+} */
+
+
+
+a {
+
+  position: relative;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+
+}
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-radius: 12px;
+  }
+  a:before,
+  a:after {
+--hoverTransition : "400ms ease-in-out"
+
+    content: " ";
+    z-index: -2;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90.56deg,
+      #27061a,
+      #ff6363 29.69%,
+      #9b4dff 52.6%,
+      #100321 98.44%
+    );
+    border-radius: 12px;
+    transition: transform var(--hoverTransition), opacity var(--hoverTransition),
+      background-color var(--hoverTransition);
+    opacity: 0;
+  }
+
+  &:before {
+    z-index: -2;
+    transform: scale(0.8);
+    filter: blur(20px);
+  }
+
+  &:after {
+--hoverTransition : "400ms ease-in-out"
+
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    transition-property: left, top, width, height, opacity, border-radius,
+      background-color;
+    transition-duration: var(--hoverTransition)
+  }
+
+  &:hover:after {
+    left: -5px;
+    top: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    opacity: 1;
+    border-radius: 14px;
+  }
+
+  &:hover:before {
+    transform: scale(1, 1.1);
+    opacity: 1;
+  }
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 24px 30px;
+  overflow: hidden;
+  padding-left: 0;
+}
+
+
+
+  img,
+  picture {
+    max-height: 48px;
+  }

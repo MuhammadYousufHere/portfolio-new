@@ -1,12 +1,12 @@
 import { Logo } from '@my/assets';
+import classNames from 'classnames';
 // import classNames from 'classnames';
 import Link from 'next/link';
 import ThemeSwitch from './ThemeSwitch';
 
 export const headerNavLinks = [
-   { href: '/blog', title: 'Blog' },
-   { href: '/about', title: 'About' },
-   { href: '/uses', title: 'Uses' },
+   { href: '/', title: 'Blog' },
+   { href: '/', title: 'About' },
 ];
 
 export default function Header() {
@@ -15,14 +15,16 @@ export default function Header() {
          <div className="mx-auto flex max-w-5xl items-center justify-between">
             <Link
                href="/"
-               className="flex items-center justify-between"
+               className="w-max flex align-middle justify-start "
                aria-label="Home"
             >
-               <Logo />
+               <div className="w-12 h-12">
+                  <Logo />
+               </div>
             </Link>
             <div className="flex items-center space-x-3 text-base leading-5">
                <div className="hidden space-x-5 sm:flex">
-                  {/* {headerNavLinks.map(({ title, href }) => {
+                  {headerNavLinks.map(({ title, href }) => {
                      const active = true;
                      return (
                         <Link
@@ -41,7 +43,7 @@ export default function Header() {
                            </span>
                         </Link>
                      );
-                  })} */}
+                  })}
                </div>
                <div className="flex items-center">
                   <ThemeSwitch />
