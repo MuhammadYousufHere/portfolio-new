@@ -1,7 +1,11 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
+
+const gray700 = 'colors.gray.700';
+const gray100 = 'colors.gray.100';
+const teal500 = 'colors.teal.500';
 module.exports = {
    content: [
       './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,6 +13,7 @@ module.exports = {
       './app/**/*.{js,ts,jsx,tsx,mdx}',
    ],
    darkMode: 'class',
+   important: true,
    theme: {
       screens: {
          sm: '640px',
@@ -21,11 +26,103 @@ module.exports = {
       },
       extend: {
          fontFamily: {
-            sans: ['var(--font-hubot)', ...defaultTheme.fontFamily.sans],
+            sans: ['Inter', ...defaultTheme.fontFamily.sans],
+            mono: [...defaultTheme.fontFamily.mono],
+            headings: ['Manrope', ...defaultTheme.fontFamily.sans],
+            fancy: ['Sriracha'],
          },
          colors: {
             gray: colors.stone,
+            orange: colors.orange,
+            blueGray: colors.slate,
+            coolGray: colors.gray,
+            teal: colors.teal,
+            dark: '#111827',
+            darker: '#0d131f',
+            midnight: '#1e293b',
+            'midnight-hover': '#334155',
+            emerald: colors.emerald,
+            fuchsia: colors.fuchsia,
+            amber: colors.amber,
+            sky: colors.sky,
+            'bg-dark': '#131325',
          },
+         typography: (theme) => ({
+            DEFAULT: {
+               css: {
+                  table: false,
+                  tbody: false,
+                  thead: false,
+                  color: theme('colors.slate.700'),
+                  a: {
+                     color: theme('colors.slate.900'),
+                     '&:hover': {},
+                     textDecorationColor: theme(teal500),
+                     textUnderlineOffset: '3px',
+                     textDecorationStyle: 'decoration-solid',
+                     code: { color: theme('colors.blue.400') },
+                  },
+                  blockquote: {
+                     borderLeftColor: theme(teal500),
+                     backgroundColor: theme('colors.slate.100'),
+                     color: theme(gray700),
+                  },
+                  'h1,h2,h3,h4': {
+                     color: theme('colors.gray.900'),
+                  },
+                  strong: { color: theme(gray700) },
+                  hr: {
+                     borderColor: theme(gray700),
+                     color: theme('colors.gray.200'),
+                     '&before': { content: '∿∿∿' },
+                  },
+                  code: { color: theme('colors.indigo.500') },
+                  'blockquote p:first-of-type::before': false,
+                  'blockquote p:last-of-type::after': false,
+                  pre: {
+                     backgroundColor: theme(gray100),
+                  },
+               },
+            },
+            dark: {
+               css: {
+                  color: theme('colors.slate.300'),
+                  a: {
+                     color: theme('colors.slate.50'),
+                     '&:hover': {
+                        color: theme(teal500),
+                     },
+                     textDecorationColor: theme('colors.teal.400'),
+                     textUnderlineOffset: '3px',
+                     textDecorationStyle: 'decoration-solid',
+                     code: { color: theme('colors.blue.400') },
+                  },
+                  blockquote: {
+                     borderLeftColor: theme(teal500),
+                     backgroundColor: theme('colors.slate.800'),
+                     color: theme('colors.gray.400'),
+                  },
+                  'h1,h2,h3,h4': {
+                     color: theme('colors.white'),
+                  },
+                  hr: { borderColor: theme('colors.gray.600') },
+                  strong: { color: theme(gray100) },
+                  thead: {
+                     color: theme(gray100),
+                     borderBottomColor: theme('colors.gray.600'),
+                  },
+                  tbody: {
+                     tr: {
+                        borderBottomColor: theme(gray700),
+                     },
+                  },
+                  code: { color: theme('colors.indigo.200') },
+                  pre: {
+                     backgroundColor: theme('colors.midnight'),
+                  },
+               },
+            },
+         }),
          keyframes: ({ theme }) => ({
             mutation: {
                '0%': {
@@ -73,7 +170,8 @@ module.exports = {
          }),
          backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            'gradient-conic':
+               'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
          },
          spacing: {
             98: '40rem',
@@ -92,4 +190,4 @@ module.exports = {
       require('@tailwindcss/typography'),
       require('tailwind-scrollbar')({ nocompatible: true }),
    ],
-}
+};
