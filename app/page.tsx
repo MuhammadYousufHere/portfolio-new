@@ -1,7 +1,5 @@
-'use client';
-
+import MainLayout from '@my/components/MainContainer';
 import WorkInProgress from '@my/components/WIP';
-import { ThemeProvider } from 'next-themes';
 
 // const preferDarkSchema =
 //    window.matchMedia &&
@@ -9,10 +7,10 @@ import { ThemeProvider } from 'next-themes';
 // const defaultTheme = preferDarkSchema ? 'dark' : 'light';
 export default function Home() {
    return (
-      <ThemeProvider attribute="class" defaultTheme="dark">
-         <main className="flex min-h-screen flex-col items-center justify-between px-5 dark:bg-bg-dark">
-            <WorkInProgress />
-         </main>
-      </ThemeProvider>
+      <MainLayout>
+         {/* <main className="flex min-h-screen flex-col items-center justify-between px-5 dark:bg-bg-dark z-10"> */}
+         <WorkInProgress />
+         {/* </main> */}
+      </MainLayout>
    );
 }

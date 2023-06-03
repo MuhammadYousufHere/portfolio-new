@@ -17,11 +17,11 @@ export default function MainLayout({ children }: Props) {
    };
 
    return (
-      <SectionContainer>
-         <Header />
-         <div className="flex h-screen flex-col justify-between">
+      <div className="flex h-screen flex-col justify-between dark:bg-bg-dark">
+         <SectionContainer>
+            <Header />
             <motion.main
-               className="mb-auto"
+               className="mb-auto bg-transparent"
                initial="hidden"
                animate="enter"
                exit="exit"
@@ -31,7 +31,7 @@ export default function MainLayout({ children }: Props) {
                {children}
             </motion.main>
             {/* <Footer /> */}
-         </div>
-      </SectionContainer>
+         </SectionContainer>
+      </div>
    );
 }

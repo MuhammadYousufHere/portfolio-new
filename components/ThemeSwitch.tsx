@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -28,7 +30,7 @@ export default function ThemeSwitch() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
-            className="text-gray-200 dark:text-gray-100"
+            className="text-gray-400 dark:text-gray-100"
          >
             {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
                <BsSunFill size={16} />
