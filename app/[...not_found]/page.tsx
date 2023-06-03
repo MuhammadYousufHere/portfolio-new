@@ -2,8 +2,10 @@
 
 import MainLayout from '@my/components/MainContainer';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 export default function FourZeroFour() {
+   notFound();
    return (
       <MainLayout>
          <div className="flex flex-col items-center justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
