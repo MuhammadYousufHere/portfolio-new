@@ -1,3 +1,5 @@
+/** @type {import('prettier').Config} */
+
 module.exports = {
    tabWidth: 3,
    printWidth: 100,
@@ -9,4 +11,28 @@ module.exports = {
    singleQuote: true,
    bracketSpacing: true,
    jsxBracketSameLine: false,
-}
+   importOrder: [
+      '^(react/(.*)$)|^(react$)',
+      '^(next/(.*)$)|^(next$)',
+      '<THIRD_PARTY_MODULES>',
+      '',
+      '^types$',
+      '^@my/env(.*)$',
+      '^@my/types/(.*)$',
+      '^@my/config/(.*)$',
+      '^@my/lib/(.*)$',
+      '^@my/hooks/(.*)$',
+      '^@my/components/ui/(.*)$',
+      '^@my/components/(.*)$',
+      '^@my/styles/(.*)$',
+      '^@my/app/(.*)$',
+      '',
+      '^[./]',
+   ],
+   importOrderSeparation: false,
+   importOrderSortSpecifiers: true,
+   importOrderBuiltinModulesToTop: true,
+   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+   importOrderMergeDuplicateImports: true,
+   importOrderCombineTypeAndValueImports: true,
+};
