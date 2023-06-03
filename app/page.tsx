@@ -8,9 +8,7 @@ import WorkInProgress from '@my/components/WIP';
 export default function Home() {
    return (
       <MainLayout>
-         {/* <main className="flex min-h-screen flex-col items-center justify-between px-5 dark:bg-bg-dark z-10"> */}
          <WorkInProgress />
-         {/* </main> */}
       </MainLayout>
    );
 }
