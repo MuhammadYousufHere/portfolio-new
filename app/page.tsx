@@ -7,7 +7,6 @@ import { ThemeProvider } from 'next-themes';
 //    window.matchMedia &&
 //    window.matchMedia('(prefers-color-scheme: dark)').matches;
 // const defaultTheme = preferDarkSchema ? 'dark' : 'light';
-
 export default function Home() {
    return (
       <ThemeProvider attribute="class" defaultTheme="dark">
