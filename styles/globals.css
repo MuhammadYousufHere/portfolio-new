@@ -1,0 +1,35 @@
+:root {
+   --primary: #ffca3a;
+   --primary-tint: #ffca3a2a;
+   --secondary: #bf4342;
+   --background-600: #535051;
+   --background-700: #3e3c3d;
+   --background-800: #343233;
+   --background-900: #2e2c2d;
+   --text-300: #b5bac8;
+   --text-200: #85878d;
+   --text-100: #d9d9d9;
+}
+::-webkit-scrollbar {
+   width: 6px;
+}
+html {
+   scroll-behavior: smooth;
+   background-color: var(--background-900);
+}
+::selection {
+   background-color: #ffffff30;
+}
+
+::-webkit-scrollbar-track {
+   background: var(--background-900);
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--primary);
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

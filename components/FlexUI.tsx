@@ -1,13 +1,17 @@
 import type { ReactNode } from 'react';
 
 type Props = {
-    children: ReactNode;
+   children: ReactNode;
 };
 function Row({ children }: Props) {
-    return <div className="row block lg:flex items-center justify-content my-3">{children}</div>;
+   return (
+      <div className="row block lg:flex items-center justify-content my-3">
+         {children}
+      </div>
+   );
 }
 function Col({ children }: Props) {
-    return <div className="flex-1 p-2">{children}</div>;
+   return <div className="flex-1 p-2">{children}</div>;
 }
 
 export { Row, Col };
