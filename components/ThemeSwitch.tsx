@@ -6,7 +6,6 @@ import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 export default function ThemeSwitch() {
    const [mounted, setMounted] = useState(false);
    const { theme, setTheme, resolvedTheme } = useTheme();
-   console.log({ theme, setTheme });
 
    // When mounted on client, now we can show the UI
    useEffect(() => setMounted(true), []);
