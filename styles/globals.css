@@ -27,8 +27,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
    background: var(--primary);
-   border-top-left-radius: 20px;
-   border-bottom-left-radius: 20px;
+   border-radius: 10px;
 }
 @tailwind base;
 @tailwind components;
