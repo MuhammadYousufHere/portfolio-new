@@ -1,6 +1,5 @@
 import { Logo } from '@my/assets';
 import classNames from 'classnames';
-// import classNames from 'classnames';
 import Link from 'next/link';
 import ThemeSwitch from './ThemeSwitch';
 

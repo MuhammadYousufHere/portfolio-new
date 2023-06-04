@@ -29,6 +29,12 @@ html {
    background: var(--primary);
    border-radius: 10px;
 }
+
+.text-large {
+   font-size: clamp(32px, 4vw, 40px);
+   line-height: 1.25;
+   font-weight: 700;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

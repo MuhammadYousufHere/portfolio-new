@@ -55,7 +55,7 @@ export function LogoDark() {
                   strokeLinejoin="round"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: 1 }}
-                  transition={{ ease: 'easeInOut', duration: 4 }}
+                  transition={{ ease: 'easeInOut', duration: 3 }}
                />
                <path
                   fill="transparent"

@@ -31,6 +31,7 @@ module.exports = {
             headings: ['Manrope', ...defaultTheme.fontFamily.sans],
             fancy: ['Sriracha'],
          },
+
          colors: {
             gray: colors.stone,
             orange: colors.orange,
@@ -41,6 +42,7 @@ module.exports = {
             darker: '#0d131f',
             midnight: '#1e293b',
             'midnight-hover': '#334155',
+            light: '#878593',
             emerald: colors.emerald,
             fuchsia: colors.fuchsia,
             amber: colors.amber,
@@ -172,6 +174,8 @@ module.exports = {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             'gradient-conic':
                'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            'linear-grad':
+               'linear-gradient(327.21deg, rgba(33, 0, 75, 0.24) 3.65%, rgba(60, 0, 136, 0) 40.32%), linear-gradient(245.93deg, rgba(209, 21, 111, 0.16) 0%, rgba(209, 25, 80, 0) 36.63%), linear-gradient(147.6deg, rgba(58, 19, 255, 0) 29.79%, rgba(98, 19, 255, 0.01) 85.72%), #13111C',
          },
          spacing: {
             98: '40rem',
