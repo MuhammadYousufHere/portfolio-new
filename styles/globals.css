@@ -15,6 +15,7 @@
 }
 html {
    scroll-behavior: smooth;
+   min-width: 360px;
 }
 ::selection {
    background-color: #ffffff30;

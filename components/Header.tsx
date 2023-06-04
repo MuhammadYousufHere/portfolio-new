@@ -18,7 +18,7 @@ export default function Header() {
                className="w-max flex align-middle justify-start "
                aria-label="Home"
             >
-               <div className="w-12 h-12">
+               <div className="w-14 h-14">
                   <Logo />
                </div>
             </Link>
