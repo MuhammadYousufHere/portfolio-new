@@ -12,6 +12,7 @@ module.exports = {
       browser: true,
       node: true,
       es6: true,
+      'jest/globals': true,
    },
 
    settings: {
@@ -25,12 +26,13 @@ module.exports = {
       },
    },
 
-   plugins: ['@typescript-eslint', 'prettier'],
+   plugins: ['@typescript-eslint', 'prettier', 'jest'],
    extends: [
       'next/core-web-vitals',
       'plugin:@typescript-eslint/recommended',
       'airbnb',
       'prettier',
+      'plugin:jest/recommended',
       'plugin:jsx-a11y/recommended',
       'prettier',
       'plugin:sonarjs/recommended',
