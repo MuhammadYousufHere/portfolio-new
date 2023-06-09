@@ -1,6 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
-
+const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 
 const gray700 = 'colors.gray.700';
@@ -10,7 +10,10 @@ module.exports = {
    content: [
       './pages/**/*.{js,ts,jsx,tsx,mdx}',
       './components/**/*.{js,ts,jsx,tsx,mdx}',
+      './common/**/*.{js,ts,jsx,tsx,mdx}',
       './app/**/*.{js,ts,jsx,tsx,mdx}',
+      './assets/**/*.{js,ts,jsx,tsx,mdx}',
+      './lib/**/*.{js,ts,jsx,tsx,mdx}',
    ],
    darkMode: 'class',
    important: true,
@@ -26,17 +29,22 @@ module.exports = {
       },
       extend: {
          fontFamily: {
-            sans: ['Inter', ...defaultTheme.fontFamily.sans],
+            sans: ['Inter', 'DM Sans', ...defaultTheme.fontFamily.sans],
             mono: [...defaultTheme.fontFamily.mono],
             headings: ['Manrope', ...defaultTheme.fontFamily.sans],
             fancy: ['Sriracha'],
          },
-
+         gridTemplateColumns: {
+            2: 'repeat(2, auto)',
+            3: 'repeat(3, auto)',
+            4: 'repeat(4, auto)',
+         },
          colors: {
             gray: colors.stone,
             orange: colors.orange,
             blueGray: colors.slate,
             coolGray: colors.gray,
+            coal: '#0b0b0b',
             teal: colors.teal,
             dark: '#111827',
             darker: '#0d131f',
@@ -125,7 +133,38 @@ module.exports = {
                },
             },
          }),
+         dasharray: {
+            1: '1',
+            2: '2',
+            3: '3',
+            4: '4',
+            5: '5',
+            10: '10',
+            15: '15',
+            20: '20',
+            300: '300',
+         },
+         dashoffset: {
+            1: '1',
+            2: '2',
+            3: '3',
+            4: '4',
+            5: '5',
+            10: '10',
+            15: '15',
+            20: '20',
+            300: '300',
+         },
+         animation: {
+            fluid: '5s linear 0s infinite alternate fluid',
+            fadeIn: '5s ease 0s infinite alternate fadeIn',
+            lemniscate: 'lemniscate 2s linear infinite',
+         },
          keyframes: ({ theme }) => ({
+            lemniscate: {
+               '0%': { strokeDashoffset: '0' },
+               '100%': { strokeDashoffset: '256' },
+            },
             mutation: {
                '0%': {
                   background: theme('colors.rose.200 / 3%'),
@@ -169,6 +208,28 @@ module.exports = {
                   transform: 'translateX(100%)',
                },
             },
+            fluid: {
+               '0%': {
+                  transform: 'rotate(0deg) scale(1, 1)',
+                  filter: 'blur(5rem) hue-rotate(0deg)',
+               },
+               '50%': {
+                  transform: 'rotate(60deg) scale(1.5, 1.2)',
+                  filter: 'blue(10rem) hue-rotate(40deg)',
+               },
+               '100%': {
+                  transform: 'rotate(90deg) scale(1, 1.5)',
+                  filter: 'blur(8rem) hue-rotate(-30deg)',
+               },
+            },
+            fadeIn: {
+               '0%': {
+                  opacity: 0,
+               },
+               '100%': {
+                  opacity: 1,
+               },
+            },
          }),
          backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -193,5 +254,28 @@ module.exports = {
    plugins: [
       require('@tailwindcss/typography'),
       require('tailwind-scrollbar')({ nocompatible: true }),
+      plugin(({ matchUtilities, theme }) => {
+         matchUtilities(
+            {
+               dasharray: (value) => ({
+                  strokeDasharray: value,
+               }),
+            },
+            { values: theme('dasharray') }
+         );
+      }),
+      plugin(({ matchUtilities, theme }) => {
+         matchUtilities(
+            {
+               dashoffset: (value) => ({
+                  strokeDashoffset: value,
+               }),
+            },
+            { values: theme('dashoffset') }
+         );
+      }),
+      plugin(({ addVariant }) => {
+         addVariant('inview', '&.is-inview');
+      }),
    ],
 };
