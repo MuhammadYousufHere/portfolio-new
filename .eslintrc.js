@@ -41,7 +41,8 @@ module.exports = {
    ],
 
    rules: {
-      '@typescript-eslint/no-explicit-any': 'error',
+      // '@typescript-eslint/no-explicit-any': 'error',
+      'react/function-component-definition': 0,
       '@typescript-eslint/no-unused-vars': [
          'warn',
          { argsIgnorePattern: '^_' },
@@ -53,6 +54,7 @@ module.exports = {
             fixStyle: 'inline-type-imports',
          },
       ],
+      'react/require-default-props': 0,
       'global-require': 'off',
       '@typescript-eslint/no-var-requires': 'off',
       'import/no-extraneous-dependencies': 'off',
