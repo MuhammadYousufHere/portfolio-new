@@ -7,7 +7,7 @@ import {
    RiCake2Fill as Cake,
    RiBriefcaseLine as Suitcase,
 } from 'react-icons/ri';
-import { SlGraduation as Graduation } from 'react-icons/sl';
+// import { SlGraduation as Graduation } from 'react-icons/sl';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 type Event = {
@@ -27,7 +27,7 @@ const HISTORY: IHistory[] = [
       year: '2023',
       events: [
          {
-            title: 'Looking for a new opportunity... 🙏',
+            title: 'Looking for a remote / freelance opportunity... 🙏',
             details:
                'Seeking a new opportunity to further grow as a developer!',
             date: 'TBD',
@@ -53,30 +53,21 @@ const HISTORY: IHistory[] = [
       year: '2021',
       events: [
          {
-            title: 'Intership as a Software Developer',
-            details:
-               'Joined Tradelegs as an intern where I familiarized myself with server side programming with Ruby using Ruby on Rails ',
+            title: 'Intership as a React JS Software Developer',
+            details: '',
             date: 'Nov 1, 2021',
             icon: Suitcase,
             bg: '#e3e3e3',
          },
-         {
-            title: 'First generation college graduate!',
-            details:
-               'Magna Cum Laude graduate from Hunter College with a B.A in Computer Science and minor in Mathematics',
-            date: 'May 25, 2021',
-            icon: Graduation,
-            bg: '#daebfb',
-         },
       ],
    },
    {
-      year: '1999',
+      year: '1998',
       events: [
          {
             title: 'Day of Birth',
-            details: 'Born in China on the 9th of December 1999!',
-            date: 'Dec 9, 1999',
+            details: 'Born in Karachi on the 1st of January 1998!',
+            date: 'Jan 1, 1998',
             icon: Cake,
             bg: '#ffebeb',
          },
@@ -105,10 +96,6 @@ const About = () => (
                      <li>
                         I enjoy designing and building out seamless and
                         intuitive user experiences.
-                     </li>
-                     <li>
-                        In my free time, I like to play video games, binge shows
-                        on Netflix, and watch 🏀 🏈.
                      </li>
                   </ul>
                </div>
@@ -188,7 +175,7 @@ function YearCard({ year, events }: { year: string; events: Event[] }) {
 const Timeline = () => (
    <div className="md:basis-[70%]">
       <h4 className="mb-[.25em] text-[1.75em] text-right font-medium tracking-tight md:text-[clamp(1.75rem,_2.5vw,_2rem)] md:pt-[.6em] md:pb-[.2em] lg:pt-[1em] lg:pb-[.4em]">
-         Timeline ⏳
+         Timeline
       </h4>
       <div>
          {HISTORY.map((timeline) => (
