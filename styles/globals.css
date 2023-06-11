@@ -18,7 +18,7 @@ html {
    min-width: 360px;
 }
 ::selection {
-   background-color: #ffffff30;
+   background-color: var(--primary-tint);
 }
 
 ::-webkit-scrollbar-track {
@@ -48,7 +48,7 @@ html.has-scroll-dragging {
 }
 
 /*!  locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-html.has-scroll-smooth {
+/* html.has-scroll-smooth {
    overflow: hidden;
 }
 
@@ -129,7 +129,43 @@ html.has-scroll-dragging {
 [data-scroll-direction='horizontal'] .c-scrollbar_thumb {
    right: auto;
    bottom: 0;
+} */
+/* 
+.scroll-section-outer {
+   overflow-x: hidden;
 }
+
+.scroll-section {
+   height: 70vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} */
+
+.underline-animation {
+   display: inline-block;
+   position: relative;
+}
+
+.underline-animation::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 3px;
+   bottom: 0;
+   left: 0;
+   background-color: #000;
+   transform-origin: bottom left;
+   transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
