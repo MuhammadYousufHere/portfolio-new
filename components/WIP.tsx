@@ -1,7 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+
+'use client';
+
+// import { renderCanvas } from '@my/lib/renderCanvas';
+// import React, { useEffect } from 'react';
 
 export default function WIP() {
+   // useEffect(() => {
+   //    renderCanvas();
+   // }, []);
    return (
       <div className="flex items-center justify-center bg-transparent mt-10">
          <div className="flex flex-col items-center justify-center max-w-2xl">
@@ -18,6 +25,10 @@ export default function WIP() {
                soon.
             </p>
          </div>
+         {/* <canvas
+            className="bg-skin-base pointer-events-none absolute inset-0"
+            id="canvas"
+         /> */}
       </div>
    );
 }
