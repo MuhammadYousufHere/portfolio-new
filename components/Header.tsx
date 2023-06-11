@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+
 import { Logo } from '@my/assets';
-import classNames from 'classnames';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
@@ -49,28 +49,20 @@ export default function Header() {
 
             <div className="flex items-center space-x-3 text-base leading-5">
                <div className="hidden space-x-5 sm:flex">
-                  {headerNavLinks.map(({ title }) => {
-                     const active = true;
-                     return (
-                        <button
-                           type="button"
-                           onClick={() => scrollTo(title.toLowerCase())}
-                           key={title}
-                           // href={href}
-                           className={classNames(
-                              'horizontal-underline text-base',
-                              {
-                                 'horizontal-underline-active': active,
-                              }
-                           )}
-                           aria-label={title}
-                        >
-                           <span className="font-bold tracking-wide text-gray-00 dark:text-gray-100">
-                              {title}
-                           </span>
-                        </button>
-                     );
-                  })}
+                  {headerNavLinks.map(({ title }) => (
+                     <button
+                        type="button"
+                        onClick={() => scrollTo(title.toLowerCase())}
+                        key={title}
+                        // href={href}
+                        className="basic-text py-1 after:bg-black dark:after:bg-white underline-animation text-md font-semibold dark:text-white"
+                        aria-label={title}
+                     >
+                        <span className="font-bold tracking-wide text-gray-00 dark:text-gray-100">
+                           {title}
+                        </span>
+                     </button>
+                  ))}
                </div>
                <div className="flex items-center">
                   <ThemeSwitch />
