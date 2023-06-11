@@ -8,17 +8,25 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
    title: 'MY Portfolio | Home',
    description: 'My official profile',
+
    icons: {
       icon: '/favicon.ico',
-      shortcut: { url: '/favicon.ico', type: 'image/svg' },
+      shortcut: '/favicon-16x16.png',
+      apple: '/apple-touch-icon.png',
    },
+   themeColor: [
+      { media: '(prefers-color-scheme: light)', color: 'white' },
+      { media: '(prefers-color-scheme: dark)', color: '#131325' },
+   ],
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
    return (
       <html lang="en" suppressHydrationWarning>
          <body className={inter.className}>
-            <ThemeProvider>{children}</ThemeProvider>
+            <ThemeProvider defaultTheme="system" enableSystem>
+               {children}
+            </ThemeProvider>
          </body>
       </html>
    );

@@ -1,14 +1,29 @@
+import MainHeading from '@my/common/MainHeading';
+import Advert from '@my/components/Advert';
 import MainLayout from '@my/components/MainContainer';
-import WorkInProgress from '@my/components/WIP';
+import SectionContainer from '@my/components/SectionContainer';
+// import WorkInProgress from '@my/components/WIP';
+import ScrollProvider from '@my/lib/ScrollProvider';
+import About from './about/page';
+import Skills from './skills/page';
 
-// const preferDarkSchema =
-//    window.matchMedia &&
-//    window.matchMedia('(prefers-color-scheme: dark)').matches;
-// const defaultTheme = preferDarkSchema ? 'dark' : 'light';
 export default function Home() {
    return (
-      <MainLayout>
-         <WorkInProgress />
-      </MainLayout>
+      <ScrollProvider>
+         <MainLayout>
+            {/* <Intro /> */}
+            {/* <AnimatedTextWord text="Hi Iam Here" /> */}
+            <MainHeading />
+         </MainLayout>
+         <SectionContainer>
+            <Advert />
+         </SectionContainer>
+         <SectionContainer>
+            <About />
+         </SectionContainer>
+         <SectionContainer>
+            <Skills />
+         </SectionContainer>
+      </ScrollProvider>
    );
 }
