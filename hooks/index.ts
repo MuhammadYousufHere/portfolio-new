@@ -2,3 +2,4 @@
 export { useLocomotiveScroll } from './useLocomotive';
 export { useVisibilityListener } from './useVisibilityListener';
 export { useGsap } from './useGSAP';
+export { useInView } from './useInView';
