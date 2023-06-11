@@ -1,6 +1,6 @@
-// import { useLocomotiveScrollContext } from '@context/locomotive-scroll';
 // import { cubicEaseIn } from '@my/utils';
 // import { useEffect, useRef, useState } from 'react';
+// import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 // export interface IAnimatedCounterProps {
 //    from: number;
@@ -16,15 +16,19 @@
 // export default function AnimatedCounter({
 //    from,
 //    to,
-//    // duration = 5,
+//    duration = 5,
 //    ...delegated
 // }: IAnimatedCounterProps) {
-//    const { scroll } = useLocomotiveScrollContext();
-//    const contentRef = useRef<HTMLDivElement | null>(null);
+//    const { scroll } = useLocomotiveScroll();
+//    const contentRef = useRef<HTMLDivElement>(null);
 //    const [value, setValue] = useState(from);
 
 //    useEffect(() => {
-//       function scrollListener({ currentElements }) {
+//       function scrollListener({
+//          currentElements,
+//       }: {
+//          currentElements: Element;
+//       }) {
 //          const target = currentElements[delegated['data-scroll-id']];
 
 //          if (typeof target === 'object') {
