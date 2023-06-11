@@ -42,6 +42,8 @@ module.exports = {
 
    rules: {
       // '@typescript-eslint/no-explicit-any': 'error',
+      'no-use-before-define': 0,
+
       'react/function-component-definition': 0,
       '@typescript-eslint/no-unused-vars': [
          'warn',
