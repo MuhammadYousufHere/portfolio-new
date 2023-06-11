@@ -28,6 +28,9 @@ module.exports = {
          '2xl': '1536px',
       },
       extend: {
+         width: {
+            scrolling: '400%',
+         },
          fontFamily: {
             sans: ['Inter', 'DM Sans', ...defaultTheme.fontFamily.sans],
             mono: [...defaultTheme.fontFamily.mono],
@@ -159,6 +162,7 @@ module.exports = {
             fluid: '5s linear 0s infinite alternate fluid',
             fadeIn: '5s ease 0s infinite alternate fadeIn',
             lemniscate: 'lemniscate 2s linear infinite',
+            handmove: 'handmove 1.5s ease-in-out 1s infinite',
          },
          keyframes: ({ theme }) => ({
             lemniscate: {
@@ -221,6 +225,10 @@ module.exports = {
                   transform: 'rotate(90deg) scale(1, 1.5)',
                   filter: 'blur(8rem) hue-rotate(-30deg)',
                },
+            },
+            handmove: {
+               '0%, 100%': { transform: 'rotate(-8deg)' },
+               '50%': { transform: 'rotate(8deg)' },
             },
             fadeIn: {
                '0%': {
