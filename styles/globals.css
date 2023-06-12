@@ -166,6 +166,32 @@ html.has-scroll-dragging {
    transform-origin: bottom left;
 }
 
+.animate-text-bg {
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   transition: all 0.2s linear;
+   line-height: 1;
+   margin-bottom: -0.15em;
+   z-index: 5;
+}
+
+.animate-text-bg::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   transform: translateX(-101%);
+   transition: all 0.2s linear;
+   z-index: -1;
+}
+
+.animate-text-bg:hover:before {
+   transform: translateX(0);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
