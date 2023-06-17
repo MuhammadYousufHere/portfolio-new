@@ -35,7 +35,8 @@ module.exports = {
             sans: ['Inter', 'DM Sans', ...defaultTheme.fontFamily.sans],
             mono: [...defaultTheme.fontFamily.mono],
             headings: ['Manrope', ...defaultTheme.fontFamily.sans],
-            fancy: ['Sriracha'],
+            fancy: ['Calvier', 'Inter'],
+            title: ['Chromate-Regular', 'serif'],
          },
          gridTemplateColumns: {
             2: 'repeat(2, auto)',
@@ -59,6 +60,12 @@ module.exports = {
             amber: colors.amber,
             sky: colors.sky,
             'bg-dark': '#131325',
+         },
+         gridTemplateColumns: {
+            mobile: 'repeat(2, 100px)',
+            smdesktop: 'repeat(3, 150px)',
+            lgdesktop: 'repeat(4, 175px)',
+            'my-desktop': 'repeat(2, auto)',
          },
          typography: (theme) => ({
             DEFAULT: {
@@ -245,6 +252,7 @@ module.exports = {
                'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             'linear-grad':
                'linear-gradient(327.21deg, rgba(33, 0, 75, 0.24) 3.65%, rgba(60, 0, 136, 0) 40.32%), linear-gradient(245.93deg, rgba(209, 21, 111, 0.16) 0%, rgba(209, 25, 80, 0) 36.63%), linear-gradient(147.6deg, rgba(58, 19, 255, 0) 29.79%, rgba(98, 19, 255, 0.01) 85.72%), #13111C',
+            blury: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15))',
          },
          spacing: {
             98: '40rem',
