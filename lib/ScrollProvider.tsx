@@ -1,13 +1,17 @@
+/* eslint-disable no-param-reassign */
+
 'use client';
 
-import React, { useEffect, useRef, type ReactNode } from 'react';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import { Cursor } from '@my/components/Cursor';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { usePathname } from 'next/navigation';
+import { useEffect, useRef, type ReactNode } from 'react';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import ScrollTriggerProxy from './ScrollTriggerProxy';
 
 export default function ScrollProvider({ children }: { children: ReactNode }) {
    const containerRef = useRef(null);
+   const cursorRef = useRef<HTMLDivElement>(null);
    const pathname = usePathname();
    useEffect(() => {
       window.history.scrollRestoration = 'manual';
@@ -35,6 +39,11 @@ export default function ScrollProvider({ children }: { children: ReactNode }) {
       >
          <ScrollTriggerProxy />
          <main data-scroll-container ref={containerRef}>
+            <Cursor
+               cursorType="normal"
+               isCursorDisabled={false}
+               cursorRef={cursorRef}
+            />
             {children}
          </main>
       </LocomotiveScrollProvider>
