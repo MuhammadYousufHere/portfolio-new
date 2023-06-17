@@ -4,7 +4,12 @@ import Link from 'next/link';
 
 export function Footer() {
    return (
-      <footer className="footer h-[full] p-[3em]  divide-y">
+      <footer
+         className="h-[full] divide-y"
+         // data-scroll
+         // data-scroll-direction="horizontal"
+         // data-scroll-speed="4"
+      >
          <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between">
             <div className="cursor-pointer mb-4 ">
                <div
