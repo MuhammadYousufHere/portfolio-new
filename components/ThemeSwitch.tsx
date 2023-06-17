@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 
-export default function ThemeSwitch() {
+export function ThemeSwitch() {
    const [mounted, setMounted] = useState(false);
    const { theme, setTheme, resolvedTheme } = useTheme();
 
