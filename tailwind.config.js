@@ -34,9 +34,11 @@ module.exports = {
          fontFamily: {
             sans: ['Inter', 'DM Sans', ...defaultTheme.fontFamily.sans],
             mono: [...defaultTheme.fontFamily.mono],
-            headings: ['Manrope', ...defaultTheme.fontFamily.sans],
+            headings: ['MarkPro-Heavy', ...defaultTheme.fontFamily.sans],
             fancy: ['Calvier', 'Inter'],
             title: ['Chromate-Regular', 'serif'],
+            hellix: ['Hellix', 'serif'],
+            'ivy-mode': ['Ivy Mode', 'serif'],
          },
          gridTemplateColumns: {
             2: 'repeat(2, auto)',
