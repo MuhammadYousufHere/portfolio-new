@@ -1,13 +1,27 @@
-import { type ReactNode } from 'react';
+import cn from 'classnames';
+import { type HTMLProps } from 'react';
 
-interface Props {
-   children: ReactNode;
+interface IProps {
+   isScrollSection: boolean;
 }
+type MyComponentProps = IProps & HTMLProps<HTMLDivElement>;
 
-export default function SectionContainer({ children }: Props) {
+export default function SectionContainer({
+   isScrollSection,
+   children,
+   className,
+   ...rest
+}: MyComponentProps) {
    return (
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-screen-2xl xl:px-24">
+      <section
+         className={cn(
+            'mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-screen-2xl xl:px-24',
+            className
+         )}
+         {...(isScrollSection && { 'data-scroll-section': true })}
+         {...rest}
+      >
          {children}
-      </div>
+      </section>
    );
 }
