@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React, { useEffect, type ReactNode } from 'react';
 import { type IconType } from 'react-icons';
 import {
@@ -79,24 +80,37 @@ const About = () => (
       <div className="container mx-auto pt-[1.5rem] pb-[2.5rem] font-normal text-white text-[clamp(.9375rem,_2.4vw,_1.09375rem)] md:text-[clamp(1rem,_1.5vw,_1.075rem)] md:leading-[1.45rem]">
          <div
             id="sticky"
-            className="relative md:flex md:justify-between md:gap-[2em] md:items-start"
+            className="relative md:flex md:justify-between md:gap-[4em] md:items-start"
          >
             <AboutMeList>
-               <div className="">
+               <div className="w-full">
                   <h3 className="mt-[1em] mb-[.5em] text-[1.75em] md:text-[clamp(1.75rem,_2.5vw,_2rem)] font-medium tracking-tight md:mt-[2rem] md:mb-[.9rem] font-fancy">
                      About me
                   </h3>
-                  <ul className="flex flex-col gap-[.7em] list-disc list-inside text-gray-200 ">
-                     <li>
-                        I&apos;m a software engineer with a focus on front-end
-                        web development using React but am keen on gaining
-                        exposure to all layers of the stack.
-                     </li>
-                     <li>
-                        I enjoy designing and building out seamless and
-                        intuitive user experiences.
-                     </li>
-                  </ul>
+
+                  <p className="font-hellix text-justify">
+                     I am a creative web developer crafting high quality
+                     interactive experiences through visuals and motion while
+                     keeping in mind performance and accessibility.
+                  </p>
+                  <p className="mt-3 font-hellix text-justify">
+                     I enjoy designing and building out seamless and intuitive
+                     user experiences. As a developer, I have always looked for
+                     the best way to find the exact means of expression, create
+                     immersive experiences at the junction of magic, humans and
+                     the mediums that bond them.
+                  </p>
+                  <p className="mt-3 font-hellix text-justify">
+                     I&apos;m available for freelance or contract work, remote
+                     or on site. Currently based in Karachi but willing to
+                     relocate. Feel free to{' '}
+                     <Link
+                        className="decoration-white underline"
+                        href="/contact"
+                     >
+                        contact me!
+                     </Link>
+                  </p>
                </div>
             </AboutMeList>
             <Timeline />
@@ -121,7 +135,7 @@ const AboutMeList = ({ children }: Props) => {
          data-scroll
          data-scroll-sticky
          data-scroll-target="#sticky"
-         className="sticky mb-[3em] md:basis-[25%] md:max-w-[17rem]"
+         className="sticky mb-[3em] md:basis-[35%] md:max-w-[32rem]"
       >
          {children}
       </div>
@@ -136,7 +150,7 @@ function YearCard({ year, events }: { year: string; events: Event[] }) {
          <div className="grid grid-cols-[auto,1fr] gap-x-[.85em] grid-flow-row">
             <div />
             <div className="flex items-center gap-[1em] mb-[1.25em]">
-               <h3 className="text-[1.5em] font-bold">{year}</h3>
+               <h3 className="text-[1.5em] font-bold font-headings">{year}</h3>
                <div className="grow h-[1px] bg-gray-100" />
             </div>
             {events.map((event) => {
@@ -158,10 +172,10 @@ function YearCard({ year, events }: { year: string; events: Event[] }) {
                         <b className="block text-[1.125em] font-title">
                            {event.title}
                         </b>
-                        <span className="inline-block mt-[.1em] text-[.925em] text-gray-400">
+                        <span className="inline-block mt-[.1em] text-[.925em] text-gray-400 font-hellix">
                            {event.date}
                         </span>
-                        <p className="mt-[.5em] tracking-wide text-[.95em] text-gray-200">
+                        <p className="mt-[.5em] tracking-wide text-[.95em] text-gray-200 font-ivy-mode">
                            {event.details}
                         </p>
                      </div>
