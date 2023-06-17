@@ -15,7 +15,7 @@ const Advert = () => (
                      className="large-texts  text-center text-2xl"
                   >
                      Bringing your <br />{' '}
-                     <span className=" font-semibold  text-3xl">
+                     <span className=" font-semibold  text-3xl font-hellix font-hellix">
                         imaginations to life.
                      </span>
                   </motion.h1>
@@ -23,7 +23,7 @@ const Advert = () => (
                      initial={{ y: 20, opacity: 0 }}
                      whileInView={{ y: 0, opacity: 1 }}
                      transition={{ duration: 0.8 }}
-                     className="text-[20px]  mt-5 text-center"
+                     className="text-[20px]  mt-5 text-center font-hellix"
                   >
                      I develop products that provide value
                   </motion.p>
@@ -40,7 +40,7 @@ const Advert = () => (
                      initial={{ y: 20, opacity: 0 }}
                      whileInView={{ y: 0, opacity: 1 }}
                      transition={{ duration: 0.7 }}
-                     className="large-texts text-center  text-[24px]"
+                     className="large-texts text-center  text-[24px] font-hellix"
                   >
                      I provide <br />
                   </motion.h1>
@@ -48,7 +48,7 @@ const Advert = () => (
                      initial={{ y: 20, opacity: 0 }}
                      whileInView={{ y: 0, opacity: 1 }}
                      transition={{ duration: 0.8 }}
-                     className="text-[20px] text-center -neue mt-4"
+                     className="text-[20px] text-center -neue mt-3 font-ivy-mode"
                   >
                      Strategic driven solutions for the best user experience and
                      luxurious quality web experiences
@@ -64,10 +64,10 @@ const Advert = () => (
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="large-texts  text-center text-[48px]"
+                        className="large-texts  text-center text-[48px] font-hellix"
                      >
                         Bringing your <br />{' '}
-                        <span className=" font-semibold  text-[60px]">
+                        <span className=" font-semibold  text-[60px] font-hellix">
                            imaginations to life.
                         </span>
                      </motion.h1>
@@ -75,7 +75,7 @@ const Advert = () => (
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[20px]  mt-5 text-center"
+                        className="text-[20px]  mt-5 text-center font-hellix"
                      >
                         I develop products that provide value
                      </motion.p>
@@ -92,7 +92,7 @@ const Advert = () => (
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="large-texts text-center  text-[48px]"
+                        className="large-texts text-center  text-[48px] font-hellix"
                      >
                         I provide <br />
                      </motion.h1>
@@ -100,7 +100,7 @@ const Advert = () => (
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[28px] text-center -neue mt-4"
+                        className="text-[28px] text-center  mt-3 font-ivy-mode"
                      >
                         Strategic driven solutions for the best user and
                         luxurious quality web experiences

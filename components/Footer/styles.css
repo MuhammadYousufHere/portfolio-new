@@ -1,0 +1,57 @@
+.marquee {
+   display: flex;
+   white-space: nowrap;
+   animation: slide 44s linear infinite;
+}
+@keyframes slide {
+   from {
+      transform: translateX(0);
+   }
+   to {
+      transform: translateX(-50%);
+   }
+}
+
+@keyframes slideRight {
+   from {
+      transform: translateX(-50%);
+   }
+   to {
+      transform: translateX(0);
+   }
+}
+
+.row:nth-child(2) {
+   opacity: 0.6;
+   .marquee {
+      margin-left: -50%;
+      animation-name: slideRight;
+      animation-duration: 90s;
+   }
+}
+.row:nth-child(3) {
+   .marquee {
+      animation-duration: 60s;
+   }
+}
+.row:last-child {
+   opacity: 1;
+}
+
+.marquee-span {
+   font-size: 30px;
+   line-height: 30px;
+   font-weight: 700;
+   margin: 0 8px;
+   font-size: 5vw;
+   line-height: 1;
+}
+.purple {
+   color: purple;
+}
+.outline-fonts {
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: purple;
+   -webkit-text-stroke-width: 2px;
+}
