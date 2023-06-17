@@ -191,6 +191,28 @@ html.has-scroll-dragging {
 .animate-text-bg:hover:before {
    transform: translateX(0);
 }
+.hover-underline-animation {
+   position: relative;
+   cursor: pointer;
+}
+
+.hover-underline-animation:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: var(--col-white);
+   transform-origin: bottom right;
+   transition: transform 0.3s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
 
 @tailwind base;
 @tailwind components;
