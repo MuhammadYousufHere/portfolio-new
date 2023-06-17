@@ -2,7 +2,6 @@
 
 import React, { useEffect, type ReactNode } from 'react';
 import { type IconType } from 'react-icons';
-import { BsEmojiSunglasses as Emoji } from 'react-icons/bs';
 import {
    RiCake2Fill as Cake,
    RiBriefcaseLine as Suitcase,
@@ -27,7 +26,7 @@ const HISTORY: IHistory[] = [
       year: '2023',
       events: [
          {
-            title: 'Looking for a remote / freelance opportunity... 🙏',
+            title: 'Looking for a remote / freelance opportunity.',
             details:
                'Seeking a new opportunity to further grow as a developer!',
             date: 'TBD',
@@ -84,8 +83,8 @@ const About = () => (
          >
             <AboutMeList>
                <div className="">
-                  <h3 className="mt-[1em] mb-[.5em] text-[1.75em] md:text-[clamp(1.75rem,_2.5vw,_2rem)] font-medium tracking-tight md:mt-[2rem] md:mb-[.9rem]">
-                     About me 👨‍💻
+                  <h3 className="mt-[1em] mb-[.5em] text-[1.75em] md:text-[clamp(1.75rem,_2.5vw,_2rem)] font-medium tracking-tight md:mt-[2rem] md:mb-[.9rem] font-fancy">
+                     About me
                   </h3>
                   <ul className="flex flex-col gap-[.7em] list-disc list-inside text-gray-200 ">
                      <li>
@@ -124,7 +123,6 @@ const AboutMeList = ({ children }: Props) => {
          data-scroll-target="#sticky"
          className="sticky mb-[3em] md:basis-[25%] md:max-w-[17rem]"
       >
-         <Emoji />
          {children}
       </div>
    ) : (
@@ -157,7 +155,9 @@ function YearCard({ year, events }: { year: string; events: Event[] }) {
 
                      {/* event details */}
                      <div className="flex flex-col mb-[1.5em]">
-                        <b className="block text-[1.125em]">{event.title}</b>
+                        <b className="block text-[1.125em] font-title">
+                           {event.title}
+                        </b>
                         <span className="inline-block mt-[.1em] text-[.925em] text-gray-400">
                            {event.date}
                         </span>
