@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const Advert = () => (
    <div id="about">
-      {/* mobile */}
       <AnimatePresence mode="wait">
          <div className="w-full h-[49rem] relative lg:hidden flex py-10 mt-32 text-white">
             <div className="w-full h-full  ">
@@ -51,7 +50,8 @@ const Advert = () => (
                      transition={{ duration: 0.8 }}
                      className="text-[20px] text-center -neue mt-4"
                   >
-                     Strategic driven solutions for the best user experience
+                     Strategic driven solutions for the best user experience and
+                     luxurious quality web experiences
                   </motion.p>
                </div>
             </div>
@@ -102,7 +102,8 @@ const Advert = () => (
                         transition={{ duration: 0.8 }}
                         className="text-[28px] text-center -neue mt-4"
                      >
-                        Strategic driven solutions for the best user experience
+                        Strategic driven solutions for the best user and
+                        luxurious quality web experiences
                      </motion.p>
                   </div>
                </div>
