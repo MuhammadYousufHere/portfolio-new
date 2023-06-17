@@ -4,28 +4,28 @@ import { Logo } from '@my/assets';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
-import ThemeSwitch from './ThemeSwitch';
+import { ThemeSwitch } from './ThemeSwitch';
 
 export const headerNavLinks = [
-   { href: '/skills', title: 'Skills' },
    { href: '/about', title: 'About' },
+   { href: '/skills', title: 'Skills' },
+   { href: '/blogs', title: 'Blogs' },
 ];
 type State = {
    about?: Element;
    skills?: Element;
+   blogs?: Element;
 };
 export default function Header() {
    const { scroll } = useLocomotiveScroll();
-   // const scrollToOption = useRef();
    const [sections, setSections] = useState<State>({});
    useEffect(() => {
       if (!scroll) return;
 
-      // const intro = document.querySelector('[data-scroll-id="intro"]');
-      // const projects = document.querySelector('[data-scroll-id="projects"]');
+      const blogs = document.querySelector('[data-scroll-id="projects"]')!;
       const about = document.querySelector('[data-scroll-id="about"]')!;
       const skills = document.querySelector('[data-scroll-id="skills"]')!;
-      setSections({ about, skills });
+      setSections({ about, skills, blogs });
    }, [scroll]);
    const scrollTo = (sectionName: string) => {
       if (!sectionName) return;
@@ -35,14 +35,14 @@ export default function Header() {
    };
 
    return (
-      <header className="z-40 bg-transparent py-5 md:py-10">
+      <header className="z-40 bg-transparent pt-2 md:py-10 md:pb-20">
          <div className=" flex max-w-full items-center justify-between">
             <Link
                href="/"
                className="w-max flex align-middle justify-start "
                aria-label="Home"
             >
-               <div className="w-14 h-14">
+               <div className="w-12 h-12">
                   <Logo />
                </div>
             </Link>
