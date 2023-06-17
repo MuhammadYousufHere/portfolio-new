@@ -168,10 +168,8 @@ const MainHeading: React.FC = () => {
             </g>
          </svg>
          <div className="main-subheading">
-            <div className="mx-auto my-6 max-w-2xl text-lg dark:text-neutral-300 text-center">
+            <div className="mx-auto my-6 max-w-2xl text-lg font-bold dark:text-neutral-300 text-center font-hellix">
                Hi, I’m Muhammad Yousuf based in Karachi, PK
-               <br />
-               Scroll for more
             </div>
             <div className="text-center">
                <a href="#work" data-scroll-to>
