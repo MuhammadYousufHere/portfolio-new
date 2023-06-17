@@ -34,7 +34,10 @@ export default function Home() {
          <SectionContainer isScrollSection>
             <Skills />
          </SectionContainer>
-         <SectionContainer isScrollSection>
+         <SectionContainer
+            isScrollSection
+            className="sm:px-0 md:px-0 sm:mx-0 lg:mx-0 lg:max-w-full sm:max-w-full md:max-w-full lg:px-0"
+         >
             <Footer />
          </SectionContainer>
       </ScrollProvider>
