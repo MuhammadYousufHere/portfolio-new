@@ -158,9 +158,9 @@ export default function Skills() {
             >
                <motion.h2
                   variants={OffScreenVar}
-                  className="font-thin text-white tracking-wider text-[2.20em]"
+                  className="font-fancy text-white tracking-wider text-[2.20em]"
                >
-                  Skills
+                  Tech I like to use
                </motion.h2>
 
                <motion.div
