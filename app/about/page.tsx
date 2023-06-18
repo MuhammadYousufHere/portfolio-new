@@ -89,16 +89,27 @@ const About = () => (
                   </h3>
 
                   <p className="font-hellix text-justify">
-                     I am a creative web developer crafting high quality
+                     {/* I am a creative web developer crafting high quality
                      interactive experiences through visuals and motion while
-                     keeping in mind performance and accessibility.
+                     keeping in mind performance and accessibility and designer
+                     eye for details. I implement design into highly interactive
+                     experiences by paying close attention to the details,
+                     animation and performance. */}
+                     I am an imaginative web developer who crafts high-quality
+                     interactive experiences using visuals and motion while
+                     taking performance, accessibility and a designer&apos;s eye
+                     for details into consideration. I incorporate design into
+                     highly interactive experiences by giving careful
+                     consideration to the specifics, animation, and performance.
                   </p>
                   <p className="mt-3 font-hellix text-justify">
                      I enjoy designing and building out seamless and intuitive
                      user experiences. As a developer, I have always looked for
                      the best way to find the exact means of expression, create
                      immersive experiences at the junction of magic, humans and
-                     the mediums that bond them.
+                     the mediums that bond them. If I&apos;m not making
+                     websites, I&apos;m probably spending time with my family,
+                     watching cricket or movies.
                   </p>
                   <p className="mt-3 font-hellix text-justify">
                      I&apos;m available for freelance or contract work, remote
