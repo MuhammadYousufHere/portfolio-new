@@ -1,6 +1,31 @@
+/* eslint-disable @next/next/no-img-element */
+
 'use client';
 
+import BootStrap from '@my/assets/icons/bootstrap-5.svg';
+import CSS from '@my/assets/icons/css-3.svg';
+import Docker from '@my/assets/icons/docker.svg';
+import Express from '@my/assets/icons/express.svg';
+import Framer from '@my/assets/icons/framer-motion.svg';
+import Git from '@my/assets/icons/git-icon.svg';
+import Gitlab from '@my/assets/icons/gitlab.svg';
+import HTML from '@my/assets/icons/html-5.svg';
+import DB from '@my/assets/icons/icons8-database.png';
+import JS from '@my/assets/icons/javascript.svg';
+import MaterialUI from '@my/assets/icons/material-ui.svg';
+import Mongo from '@my/assets/icons/mongodb-icon.svg';
+import Next from '@my/assets/icons/next-js.svg';
+import Node from '@my/assets/icons/nodejs-icon.svg';
+import Postgresql from '@my/assets/icons/postgresql.svg';
+import Python from '@my/assets/icons/python.svg';
+import Reactt from '@my/assets/icons/react-js.svg';
+import ReactNative from '@my/assets/icons/react-native.svg';
+import RRD from '@my/assets/icons/react-router.svg';
+import Redux from '@my/assets/icons/redux.svg';
+import Tailwind from '@my/assets/icons/tailwindcss.svg';
+import TS from '@my/assets/icons/typescript.svg';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import useMeasure from 'react-use-measure';
 
@@ -19,20 +44,32 @@ const tools: ITools[] = [
       icons: [
          {
             name: 'React',
-            Icon: 'Reactt',
+            Icon: Reactt,
+         },
+         {
+            name: 'ReactNative',
+            Icon: ReactNative,
+         },
+         {
+            name: 'NextJS',
+            Icon: Next,
          },
          {
             name: 'Redux',
-            Icon: 'Redux',
+            Icon: Redux,
          },
 
          {
             name: 'MaterialUI',
-            Icon: 'MaterialUI',
+            Icon: MaterialUI,
+         },
+         {
+            name: 'TailindCSS',
+            Icon: Tailwind,
          },
          {
             name: 'Bootstrap',
-            Icon: 'BootStrap',
+            Icon: BootStrap,
          },
       ],
    },
@@ -41,24 +78,36 @@ const tools: ITools[] = [
       icons: [
          {
             name: 'HTML',
-            Icon: 'HTML',
+            Icon: HTML,
          },
          {
             name: 'CSS',
-            Icon: 'CSS',
+            Icon: CSS,
          },
          {
             name: 'Javscript',
-            Icon: 'JS',
+            Icon: JS,
+         },
+         {
+            name: 'Typecript',
+            Icon: TS,
          },
 
          {
             name: 'Python',
-            Icon: 'Python',
+            Icon: Python,
          },
          {
             name: 'SQL',
-            Icon: 'DB',
+            Icon: DB,
+         },
+         {
+            name: 'NodeJS',
+            Icon: Node,
+         },
+         {
+            name: 'ExpressJs',
+            Icon: Express,
          },
       ],
    },
@@ -67,15 +116,31 @@ const tools: ITools[] = [
       icons: [
          {
             name: 'Git',
-            Icon: 'Git',
+            Icon: Git,
          },
          {
             name: 'Gitlab',
-            Icon: 'Gitlab',
+            Icon: Gitlab,
+         },
+         {
+            name: 'Docker',
+            Icon: Docker,
          },
          {
             name: 'PostgreSQL',
-            Icon: 'DB',
+            Icon: Postgresql,
+         },
+         {
+            name: 'MongoDB',
+            Icon: Mongo,
+         },
+         {
+            name: 'Framer motion',
+            Icon: Framer,
+         },
+         {
+            name: 'React Router',
+            Icon: RRD,
          },
       ],
    },
@@ -253,16 +318,19 @@ export default function Skills() {
                            className="w-full min-h-[84px] grid place-items-center justify-center grid-cols-[repeat(auto-fit,minmax(118px,max-content))] gap-4"
                            ref={ref}
                         >
-                           {selectedTool.icons.map(({ name }) => (
+                           {selectedTool.icons.map(({ name, Icon }) => (
                               <li
-                                 className="max-w-[118px] min-h-[84px] grid place-items-center gap-3"
+                                 className="min-w-[118px] min-h-[84px] grid place-items-center gap-3"
                                  key={name}
                               >
-                                 {/* <img
+                                 <Image
+                                    priority
                                     className="w-11 h-11 block"
                                     src={Icon}
-                                    alt="icon"
-                                 /> */}
+                                    alt={name}
+                                    width={200}
+                                    height={200}
+                                 />
                                  <div className="font-thin text-[1.15em] lg-text-[1.3em] text-center text-white tracking-wider">
                                     {name}
                                  </div>
