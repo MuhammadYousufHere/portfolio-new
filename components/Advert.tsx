@@ -15,7 +15,7 @@ const Advert = () => (
                      className="large-texts  text-center text-2xl"
                   >
                      Bringing your <br />{' '}
-                     <span className=" font-semibold  text-3xl font-hellix font-hellix">
+                     <span className=" font-semibold  text-3xl font-hellix">
                         imaginations to life.
                      </span>
                   </motion.h1>
@@ -23,12 +23,12 @@ const Advert = () => (
                      initial={{ y: 20, opacity: 0 }}
                      whileInView={{ y: 0, opacity: 1 }}
                      transition={{ duration: 0.8 }}
-                     className="text-[20px]  mt-5 text-center font-hellix"
+                     className="text-[20px]  mt-3 text-center font-hellix"
                   >
                      I develop products that provide value
                   </motion.p>
                </div>
-               <div className="w-full h-72  flex justify-center">
+               <div className="w-full h-56  flex justify-center">
                   <motion.div
                      whileInView={{ height: ['0%', '100%'] }}
                      transition={{ duration: 2, ease: 'easeInOut' }}
@@ -40,7 +40,7 @@ const Advert = () => (
                      initial={{ y: 20, opacity: 0 }}
                      whileInView={{ y: 0, opacity: 1 }}
                      transition={{ duration: 0.7 }}
-                     className="large-texts text-center  text-[24px] font-hellix"
+                     className="large-texts  text-center text-[48px] font-hellix"
                   >
                      I provide <br />
                   </motion.h1>
@@ -75,12 +75,12 @@ const Advert = () => (
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[20px]  mt-5 text-center font-hellix"
+                        className="text-[20px]  mt-3 text-center font-hellix"
                      >
                         I develop products that provide value
                      </motion.p>
                   </div>
-                  <div className="w-full h-72  mt-32 flex justify-center">
+                  <div className="w-full h-56  mt-32 flex justify-center">
                      <motion.div
                         whileInView={{ height: ['0%', '100%'] }}
                         transition={{ duration: 2, ease: 'easeInOut' }}
@@ -92,7 +92,7 @@ const Advert = () => (
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="large-texts text-center  text-[48px] font-hellix"
+                        className="large-texts  text-center text-[48px] font-hellix"
                      >
                         I provide <br />
                      </motion.h1>
