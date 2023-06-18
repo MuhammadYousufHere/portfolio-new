@@ -175,6 +175,7 @@
 html {
    scroll-behavior: smooth;
    min-width: 360px;
+   cursor: none;
 }
 ::selection {
    background-color: var(--primary-tint);
