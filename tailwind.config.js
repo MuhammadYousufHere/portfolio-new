@@ -39,6 +39,7 @@ module.exports = {
             title: ['Chromate-Regular', 'serif'],
             hellix: ['Hellix', 'serif'],
             'ivy-mode': ['Ivy Mode', 'serif'],
+            syne: ['Syne', 'serif'],
          },
          gridTemplateColumns: {
             2: 'repeat(2, auto)',
