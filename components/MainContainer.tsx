@@ -12,7 +12,7 @@ interface Props {
 
 export default function MainLayout({ children }: Props) {
    const variants = {
-      hidden: { opacity: 0, x: -200 },
+      hidden: { opacity: 0, x: 0 }, // or -200
       enter: { opacity: 1, x: 0 },
       exit: { opacity: 0, x: 0 },
    };
@@ -36,7 +36,7 @@ export default function MainLayout({ children }: Props) {
             animate="enter"
             exit="exit"
             variants={variants}
-            transition={{ type: 'linear' }}
+            transition={{ type: 'spring' }}
          >
             <canvas
                className="bg-skin-base pointer-events-none absolute inset-0"
