@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 import '@my/styles/globals.css';
-import ThemeProvider from '@my/components/Provider';
+import ThemeProvider from '@my/lib/ThemeProvider';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
