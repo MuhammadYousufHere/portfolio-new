@@ -93,6 +93,17 @@
       "tabWidth": 3,
       "trailingComma": "es5"
    },
+   "husky": {
+      "hooks": {
+         "pre-commit": "lint-staged"
+      }
+   },
+   "lint-staged": {
+      "*.{js,jsx,ts,tsx}": [
+         "npm run lint -- --fix",
+         "git add"
+      ]
+   },
    "jest-runner-eslint": {
       "cliOptions": {
          "ignorePath": "./.gitignore"
