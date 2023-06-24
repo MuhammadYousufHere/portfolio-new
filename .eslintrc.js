@@ -43,7 +43,6 @@ module.exports = {
    rules: {
       // '@typescript-eslint/no-explicit-any': 'error',
       'no-use-before-define': 0,
-
       'react/function-component-definition': 0,
       '@typescript-eslint/no-unused-vars': [
          'warn',
@@ -68,7 +67,7 @@ module.exports = {
          },
       ],
       'no-shadow': 'off',
-      '@typescript-eslint/no-shadow': 'warn',
+      '@typescript-eslint/no-shadow': 'off',
       'react/jsx-props-no-spreading': 'off',
       'import/extensions': [
          'error',
