@@ -1,14 +1,14 @@
 'use client';
 
 import LoaderProvider, {
-   LoadingContext,
-   type TLoaderContex,
-} from '@my/context/loaderContext';
+   AppContext,
+   type TAppContext,
+} from '@my/context/AppContext';
 import { motion } from 'framer-motion';
 import { useContext, type ReactNode } from 'react';
 
 export default function Loader({ children }: { children: ReactNode }) {
-   const { setIsLoading }: TLoaderContex = useContext(LoadingContext);
+   const { setIsLoading }: TAppContext = useContext(AppContext);
    return (
       <LoaderProvider>
          <motion.div
