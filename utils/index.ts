@@ -16,4 +16,7 @@ const sliceItems = (array: string[], maxItems: number) => {
       remainingItems,
    };
 };
-export { cubicEaseIn, staggerTransition, sliceItems };
+const lerp = (start: number, end: number, amt: number) =>
+   (1 - amt) * start + amt * end;
+
+export { cubicEaseIn, staggerTransition, sliceItems, lerp };
