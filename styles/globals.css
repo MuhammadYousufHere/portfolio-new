@@ -32,7 +32,7 @@
    font-family: 'Hellix';
    src: url('../assets/fonts/Hellix-Regular.eot');
    src: local('Hellix Regular'), local('../assets/fonts/Hellix-Regular'),
-      url('../assets/fonts/Hellix-Regular.eot?#iefix')
+      url('../assets/fonts/Hellix-Regular.eot')
          format('embedded-opentype'),
       url('../assets/fonts/Hellix-Regular.woff2') format('woff2'),
       url('../assets/fonts/Hellix-Regular.woff') format('woff'),
@@ -44,7 +44,7 @@
    font-family: 'Hellix';
    src: url('../assets/fonts/Hellix-Light.eot');
    src: local('Hellix Light'), local('../assets/fonts/Hellix-Light'),
-      url('../assets/fonts/Hellix-Light.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-Light.eot') format('embedded-opentype'),
       url('../assets/fonts/Hellix-Light.woff2') format('woff2'),
       url('../assets/fonts/Hellix-Light.woff') format('woff'),
       url('../assets/fonts/Hellix-Light.ttf') format('truetype');
@@ -56,7 +56,7 @@
    font-family: 'Hellix';
    src: url('../assets/fonts/Hellix-SemiBold.eot');
    src: local('Hellix SemiBold'), local('../assets/fonts/Hellix-SemiBold'),
-      url('../assets/fonts/Hellix-SemiBold.eot?#iefix')
+      url('../assets/fonts/Hellix-SemiBold.eot')
          format('embedded-opentype'),
       url('../assets/fonts/Hellix-SemiBold.woff2') format('woff2'),
       url('../assets/fonts/Hellix-SemiBold.woff') format('woff'),
@@ -68,7 +68,7 @@
    font-family: 'Hellix';
    src: url('../assets/fonts/Hellix-Bold.eot');
    src: local('Hellix Bold'), local('../assets/fonts/Hellix-Bold'),
-      url('../assets/fonts/Hellix-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-Bold.eot') format('embedded-opentype'),
       url('../assets/fonts/Hellix-Bold.woff2') format('woff2'),
       url('../assets/fonts/Hellix-Bold.woff') format('woff'),
       url('../assets/fonts/Hellix-Bold.ttf') format('truetype');
@@ -80,7 +80,7 @@
    font-family: 'Hellix';
    src: url('../assets/fonts/Hellix-Medium.eot');
    src: local('Hellix Medium'), local('../assets/fonts/Hellix-Medium'),
-      url('../assets/fonts/Hellix-Medium.eot?#iefix')
+      url('../assets/fonts/Hellix-Medium.eot')
          format('embedded-opentype'),
       url('../assets/fonts/Hellix-Medium.woff2') format('woff2'),
       url('../assets/fonts/Hellix-Medium.woff') format('woff'),
@@ -92,7 +92,7 @@
    font-family: 'Ivy Mode';
    src: url('../assets/fonts/IvyMode-Regular.eot');
    src: local('Ivy Mode Regular'), local('../assets/fonts/IvyMode-Regular'),
-      url('../assets/fonts/IvyMode-Regular.eot?#iefix')
+      url('../assets/fonts/IvyMode-Regular.eot')
          format('embedded-opentype'),
       url('../assets/fonts/IvyMode-Regular.woff2') format('woff2'),
       url('../assets/fonts/IvyMode-Regular.woff') format('woff'),
@@ -104,7 +104,7 @@
    font-family: 'Ivy Mode';
    src: url('../assets/fonts/IvyMode-Bold.eot');
    src: local('Ivy Mode Bold'), local('../assets/fonts/IvyMode-Bold'),
-      url('../assets/fonts/IvyMode-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-Bold.eot') format('embedded-opentype'),
       url('../assets/fonts/IvyMode-Bold.woff2') format('woff2'),
       url('../assets/fonts/IvyMode-Bold.woff') format('woff'),
       url('../assets/fonts/IvyMode-Bold.ttf') format('truetype');
@@ -116,7 +116,7 @@
    font-family: 'Ivy Mode';
    src: url('../assets/fonts/IvyMode-Light.eot');
    src: local('Ivy Mode Light'), local('../assets/fonts/IvyMode-Light'),
-      url('../assets/fonts/IvyMode-Light.eot?#iefix')
+      url('../assets/fonts/IvyMode-Light.eot')
          format('embedded-opentype'),
       url('../assets/fonts/IvyMode-Light.woff2') format('woff2'),
       url('../assets/fonts/IvyMode-Light.woff') format('woff'),
@@ -129,7 +129,7 @@
    font-family: 'Ivy Mode';
    src: url('../assets/fonts/IvyMode-Thin.eot');
    src: local('Ivy Mode Thin'), local('../assets/fonts/IvyMode-Thin'),
-      url('../assets/fonts/IvyMode-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-Thin.eot') format('embedded-opentype'),
       url('../assets/fonts/IvyMode-Thin.woff2') format('woff2'),
       url('../assets/fonts/IvyMode-Thin.woff') format('woff'),
       url('../assets/fonts/IvyMode-Thin.ttf') format('truetype');
@@ -141,7 +141,7 @@
    font-family: 'Ivy Mode';
    src: url('../assets/fonts/IvyMode-SemiBold.eot');
    src: local('Ivy Mode SemiBold'), local('../assets/fonts/IvyMode-SemiBold'),
-      url('../assets/fonts/IvyMode-SemiBold.eot?#iefix')
+      url('../assets/fonts/IvyMode-SemiBold.eot')
          format('embedded-opentype'),
       url('../assets/fonts/IvyMode-SemiBold.woff2') format('woff2'),
       url('../assets/fonts/IvyMode-SemiBold.woff') format('woff'),
