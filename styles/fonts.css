@@ -1,0 +1,168 @@
+@font-face {
+   font-family: 'Calvier';
+   src: url('../assets/fonts/Calvier.ttf') format('truetype');
+   font-weight: 500;
+   font-display: swap;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Chromate-Regular';
+   src: url('../assets/fonts/Chromate-Regular.ttf') format('truetype');
+   font-weight: 500;
+   font-display: swap;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'CabinetGrotesk-Regular';
+   src: url('../assets/fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+   font-weight: 500;
+   font-display: swap;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'CabinetGrotesk-Bold';
+   src: url('../assets/fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+   font-weight: 700;
+   font-display: swap;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Hellix';
+   src: url('../assets/fonts/Hellix-Regular.eot');
+   src: local('Hellix Regular'), local('../assets/fonts/Hellix-Regular'),
+      url('../assets/fonts/Hellix-Regular.eot') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-Regular.woff2') format('woff2'),
+      url('../assets/fonts/Hellix-Regular.woff') format('woff'),
+      url('../assets/fonts/Hellix-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Hellix';
+   src: url('../assets/fonts/Hellix-Light.eot');
+   src: local('Hellix Light'), local('../assets/fonts/Hellix-Light'),
+      url('../assets/fonts/Hellix-Light.eot') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-Light.woff2') format('woff2'),
+      url('../assets/fonts/Hellix-Light.woff') format('woff'),
+      url('../assets/fonts/Hellix-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Hellix';
+   src: url('../assets/fonts/Hellix-SemiBold.eot');
+   src: local('Hellix SemiBold'), local('../assets/fonts/Hellix-SemiBold'),
+      url('../assets/fonts/Hellix-SemiBold.eot') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-SemiBold.woff2') format('woff2'),
+      url('../assets/fonts/Hellix-SemiBold.woff') format('woff'),
+      url('../assets/fonts/Hellix-SemiBold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Hellix';
+   src: url('../assets/fonts/Hellix-Bold.eot');
+   src: local('Hellix Bold'), local('../assets/fonts/Hellix-Bold'),
+      url('../assets/fonts/Hellix-Bold.eot') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Hellix-Bold.woff') format('woff'),
+      url('../assets/fonts/Hellix-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Hellix';
+   src: url('../assets/fonts/Hellix-Medium.eot');
+   src: local('Hellix Medium'), local('../assets/fonts/Hellix-Medium'),
+      url('../assets/fonts/Hellix-Medium.eot') format('embedded-opentype'),
+      url('../assets/fonts/Hellix-Medium.woff2') format('woff2'),
+      url('../assets/fonts/Hellix-Medium.woff') format('woff'),
+      url('../assets/fonts/Hellix-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Ivy Mode';
+   src: url('../assets/fonts/IvyMode-Regular.eot');
+   src: local('Ivy Mode Regular'), local('../assets/fonts/IvyMode-Regular'),
+      url('../assets/fonts/IvyMode-Regular.eot') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-Regular.woff2') format('woff2'),
+      url('../assets/fonts/IvyMode-Regular.woff') format('woff'),
+      url('../assets/fonts/IvyMode-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Ivy Mode';
+   src: url('../assets/fonts/IvyMode-Bold.eot');
+   src: local('Ivy Mode Bold'), local('../assets/fonts/IvyMode-Bold'),
+      url('../assets/fonts/IvyMode-Bold.eot') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-Bold.woff2') format('woff2'),
+      url('../assets/fonts/IvyMode-Bold.woff') format('woff'),
+      url('../assets/fonts/IvyMode-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Ivy Mode';
+   src: url('../assets/fonts/IvyMode-Light.eot');
+   src: local('Ivy Mode Light'), local('../assets/fonts/IvyMode-Light'),
+      url('../assets/fonts/IvyMode-Light.eot') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-Light.woff2') format('woff2'),
+      url('../assets/fonts/IvyMode-Light.woff') format('woff'),
+      url('../assets/fonts/IvyMode-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Ivy Mode';
+   src: url('../assets/fonts/IvyMode-Thin.eot');
+   src: local('Ivy Mode Thin'), local('../assets/fonts/IvyMode-Thin'),
+      url('../assets/fonts/IvyMode-Thin.eot') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-Thin.woff2') format('woff2'),
+      url('../assets/fonts/IvyMode-Thin.woff') format('woff'),
+      url('../assets/fonts/IvyMode-Thin.ttf') format('truetype');
+   font-weight: 100;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Ivy Mode';
+   src: url('../assets/fonts/IvyMode-SemiBold.eot');
+   src: local('Ivy Mode SemiBold'), local('../assets/fonts/IvyMode-SemiBold'),
+      url('../assets/fonts/IvyMode-SemiBold.eot') format('embedded-opentype'),
+      url('../assets/fonts/IvyMode-SemiBold.woff2') format('woff2'),
+      url('../assets/fonts/IvyMode-SemiBold.woff') format('woff'),
+      url('../assets/fonts/IvyMode-SemiBold.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Syne';
+   src: url('../assets/fonts/syne.bold.otf');
+   src: local('Syne'), local('../assets/fonts/syne.bold'),
+      url('../assets/fonts/syne.bold.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Syne';
+   src: url('../assets/fonts/syne-extra.otf');
+   src: local('Syne'), local('../assets/fonts/syne-extra'),
+      url('../assets/fonts/syne-extra.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'MarkPro-Heavy';
+   src: local('Ivy Mode SemiBold'), local('../assets/fonts/MarkPro-Heavy'),
+      url('../assets/fonts/MarkPro-Heavy.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+}
