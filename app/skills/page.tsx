@@ -1,11 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
-
 'use client';
 
 import BootStrap from '@my/assets/icons/bootstrap-5.svg';
 import CSS from '@my/assets/icons/css-3.svg';
 import Docker from '@my/assets/icons/docker.svg';
-import Express from '@my/assets/icons/express.svg';
+import Express from '@my/assets/icons/express_js.svg';
 import Framer from '@my/assets/icons/framer-motion.svg';
 import Git from '@my/assets/icons/git-icon.svg';
 import Gitlab from '@my/assets/icons/gitlab.svg';
@@ -14,7 +12,7 @@ import DB from '@my/assets/icons/icons8-database.png';
 import JS from '@my/assets/icons/javascript.svg';
 import MaterialUI from '@my/assets/icons/material-ui.svg';
 import Mongo from '@my/assets/icons/mongodb-icon.svg';
-import Next from '@my/assets/icons/next-js.svg';
+import Next from '@my/assets/icons/next.svg';
 import Node from '@my/assets/icons/nodejs-icon.svg';
 import Postgresql from '@my/assets/icons/postgresql.svg';
 import Python from '@my/assets/icons/python.svg';
@@ -205,7 +203,7 @@ export default function Skills() {
    ]);
    const [ref, { height }] = useMeasure();
    const [focused, setFocused] = React.useState('framework');
-   const isMd = false;
+   const isMd = true;
    const selectedTool = tools.find(({ type }) => type === selected) as ITools;
 
    return (
