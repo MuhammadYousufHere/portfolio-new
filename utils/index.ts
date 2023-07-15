@@ -19,4 +19,14 @@ const sliceItems = (array: string[], maxItems: number) => {
 const lerp = (start: number, end: number, amt: number) =>
    (1 - amt) * start + amt * end;
 
+export default function debounce<T extends (...args: T[]) => void>(
+   fn: T,
+   ms = 300
+) {
+   let timeoutId: ReturnType<typeof setTimeout>;
+   return function debouncedFn(...args: Parameters<T>) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => fn.apply(args), ms);
+   };
+}
 export { cubicEaseIn, staggerTransition, sliceItems, lerp };
