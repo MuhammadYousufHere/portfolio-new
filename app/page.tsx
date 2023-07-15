@@ -8,17 +8,24 @@
 // import Transition from '@my/common/Transition';
 // import Button from '@my/common/VarButton';
 import Advert from '@my/components/Advert';
+import { MyDetails } from '@my/components/Detail';
+// import { Footer } from '@my/components/Footer';
+// import Horizontal from '@my/components/Horizontal';
 // import { Experties, Section } from '@my/components/Expertise';
 // import ExternalLink from '@my/components/ExternalLinks';
 // import { Footer } from '@my/components/Footer';
 // import Header from '@my/components/Header/Header';
 // import HeroText from '@my/components/HeroText';
 import MainLayout from '@my/components/MainContainer';
+import Over from '@my/components/Over';
 // import { Projects } from '@my/components/Projects';
 // import TestGSAP from '@my/components/Projects/Test';
 import SectionContainer from '@my/components/SectionContainer';
 // import useTextReveal from '@my/hooks/useTextReveal';
 import ScrollProvider from '@my/lib/ScrollProvider';
+import About from './about/page';
+
+// import Skills from './skills/page';
 
 // import { AnimatePresence } from 'framer-motion';
 // import Link from 'next/link';
@@ -57,7 +64,89 @@ export default function Home() {
                   </div>
                ))}
             </div> */}
-            {/* <div className="-translate-y-2/4 absolute w-full h-fit z-[9991] left-0 top-2/4 font-syne ">
+
+            {/* <HeroText />
+            <AnimatedLetters text="Hello, Folks" delay={0.05} duration={0.2} />
+            <AnimatedTextWord text="Hello, Folks!" /> */}
+            {/* <MainHeading /> */}
+            {/* <HeroText /> */}
+            {/* <SlideUpTransition order={2}>Hello, Folks!</SlideUpTransition> */}
+            {/* <Loader>Loading...</Loader> */}
+            {/* <Transition>Hello Folks!</Transition> */}
+            {/* <ExternalLink arrow href="www.google.com" underline>
+               Hello Folks
+            </ExternalLink> */}
+         </MainLayout>
+
+         <SectionContainer>
+            <Advert />
+         </SectionContainer>
+         <MyDetails />
+         {/* <Experties /> */}
+         {/* <Section>
+            <Experties />
+         </Section> */}
+         {/* <SectionContainer isScrollSection>
+            <AnimatedBorders />
+         </SectionContainer> */}
+         <SectionContainer>
+            <About />
+         </SectionContainer>
+
+         {/* <SectionContainer isScrollSection>
+            <div className="border border-gray my-2 mb-5">
+               <nav>
+                  {links.map((item) => (
+                     <Link
+                        className="flex items-end justify-between pl-[120px] pb-[40px] pt-[80px] pr-[41px] border-b border-gray relative group dark:text-white"
+                        href={item.to}
+                        key={+item.id}
+                     >
+                        <div className="absolute top-0 left-0 w-full h-0 bg-dark dark:bg-white group-hover:h-full transition-s duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]" />
+                        <p className="group-hover:text-white dark:group-hover:text-dark relative z-[2] font-ivy-mode font-normal">
+                           {item.title}
+                        </p>
+                        <span className="font-title group-hover:text-white dark:group-hover:text-white relative z-[2]">
+                           {item.num}
+                        </span>
+                     </Link>
+                  ))}
+               </nav>
+            </div>
+         </SectionContainer> */}
+         {/* <Projects /> */}
+         {/* <SectionContainer isScrollSection>
+            <Section />
+         </SectionContainer> */}
+         {/* <SectionContainer isScrollSection>
+            <Footer />
+         </SectionContainer> */}
+         {/* <footer
+            data-scroll-section
+            className="py-12 px-4 bg-black dark:text-white font-fancy h-screen overflow-hidden"
+         >
+            <div data-scroll data-scroll-speed={-3}>
+               <h2 className="font-syne font-semibold text-7xl ">
+                  Muhammad Yousuf
+               </h2>
+               <h3>
+                  “To climb is human; <br /> to summit- divine.”
+               </h3>
+            </div>
+         </footer> */}
+         {/* <ScrollSection /> */}
+         {/* <SectionContainer>
+            <Skills />
+         </SectionContainer> */}
+         {/* <Horizontal /> */}
+         <main className="h-screen dark:bg-midnight sticky top-0" />
+         <Over />
+         {/* <Footer /> */}
+      </ScrollProvider>
+   );
+}
+
+/* <div className="-translate-y-2/4 absolute w-full h-fit z-[9991] left-0 top-2/4 font-syne ">
                <div className="flex justify-center relative">
                   <div
                      className="block text-start relative overflow-hidden"
@@ -442,78 +531,4 @@ export default function Home() {
                      </div>
                   </div>
                </div>
-            </div> */}
-            {/* <HeroText />
-            <AnimatedLetters text="Hello, Folks" delay={0.05} duration={0.2} />
-            <AnimatedTextWord text="Hello, Folks!" /> */}
-            {/* <MainHeading /> */}
-            {/* <HeroText /> */}
-            {/* <SlideUpTransition order={2}>Hello, Folks!</SlideUpTransition> */}
-            {/* <Loader>Loading...</Loader> */}
-            {/* <Transition>Hello Folks!</Transition> */}
-            {/* <ExternalLink arrow href="www.google.com" underline>
-               Hello Folks
-            </ExternalLink> */}
-         </MainLayout>
-
-         <SectionContainer isScrollSection>
-            <Advert />
-         </SectionContainer>
-
-         {/* <Experties /> */}
-         {/* <Section>
-            <Experties />
-         </Section> */}
-         {/* <SectionContainer isScrollSection>
-            <AnimatedBorders />
-         </SectionContainer> */}
-         {/* <SectionContainer isScrollSection>
-            <About />
-         </SectionContainer>
-         <SectionContainer isScrollSection>
-            <Skills />
-         </SectionContainer> */}
-         {/* <SectionContainer isScrollSection>
-            <div className="border border-gray my-2 mb-5">
-               <nav>
-                  {links.map((item) => (
-                     <Link
-                        className="flex items-end justify-between pl-[120px] pb-[40px] pt-[80px] pr-[41px] border-b border-gray relative group dark:text-white"
-                        href={item.to}
-                        key={+item.id}
-                     >
-                        <div className="absolute top-0 left-0 w-full h-0 bg-dark dark:bg-white group-hover:h-full transition-s duration-500 ease-[cubic-bezier(.77,.14,.11,.88)] z-[1]" />
-                        <p className="group-hover:text-white dark:group-hover:text-dark relative z-[2] font-ivy-mode font-normal">
-                           {item.title}
-                        </p>
-                        <span className="font-title group-hover:text-white dark:group-hover:text-white relative z-[2]">
-                           {item.num}
-                        </span>
-                     </Link>
-                  ))}
-               </nav>
-            </div>
-         </SectionContainer> */}
-         {/* <Projects /> */}
-         {/* <SectionContainer isScrollSection>
-            <Section />
-         </SectionContainer> */}
-         {/* <SectionContainer isScrollSection>
-            <Footer />
-         </SectionContainer> */}
-         {/* <footer
-            data-scroll-section
-            className="py-12 px-4 bg-black dark:text-white font-fancy h-screen overflow-hidden"
-         >
-            <div data-scroll data-scroll-speed={-3}>
-               <h2 className="font-syne font-semibold text-7xl ">
-                  Muhammad Yousuf
-               </h2>
-               <h3>
-                  “To climb is human; <br /> to summit- divine.”
-               </h3>
-            </div>
-         </footer> */}
-      </ScrollProvider>
-   );
-}
+            </div> */
