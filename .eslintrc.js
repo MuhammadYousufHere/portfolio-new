@@ -34,7 +34,6 @@ module.exports = {
       'prettier',
       'plugin:jest/recommended',
       'plugin:jsx-a11y/recommended',
-      'prettier',
       'plugin:sonarjs/recommended',
       'plugin:security/recommended',
       'plugin:react-hooks/recommended',
