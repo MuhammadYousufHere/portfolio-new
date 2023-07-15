@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { type HTMLProps } from 'react';
 
 interface IProps {
-   isScrollSection: boolean;
+   isScrollSection?: boolean;
 }
 type MyComponentProps = IProps & HTMLProps<HTMLDivElement>;
 
