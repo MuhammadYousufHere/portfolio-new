@@ -1,4 +1,5 @@
 import { type ReactNode } from 'react';
+import '@my/styles/fonts.css';
 import '@my/styles/globals.css';
 import ThemeProvider from '@my/lib/ThemeProvider';
 import { Inter } from 'next/font/google';
