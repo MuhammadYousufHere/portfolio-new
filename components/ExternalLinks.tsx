@@ -4,7 +4,7 @@ import { type ReactNode } from 'react';
 interface Props {
    arrow: boolean;
    children: ReactNode;
-   className: string;
+   className?: string;
    href: string;
    underline: boolean;
 }
