@@ -2,14 +2,8 @@
 
 import Link from 'next/link';
 import './styles.css';
-import type LocomotiveScroll from 'locomotive-scroll';
-import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 export function Footer() {
-   const ls = useLocomotiveScroll();
-   const backToTop = () => {
-      (ls.scroll as LocomotiveScroll).scrollTo(0, { duration: 1_000 });
-   };
    return (
       <footer
          className="h-[full] divide-y"
@@ -195,18 +189,21 @@ export function Footer() {
             </div>
          </div>
          <div className="flex justify-between items-center">
-            <div className="font-extralight text-[14px]  md:text-[18px] align-center my-8">
-               &copy; Muhammad Yousuf {new Date().getUTCFullYear()}
+            <div className="font-extralight text-[14px]  md:text-[17px] align-center my-8">
+               {/* <span className="w-10 h-10">
+                  <LogoFill />
+               </span>{' '} */}
+               Muhammad Yousuf &copy; {new Date().getUTCFullYear()}
             </div>
             <p className="font-headings">
-               ALL RIGHTS RESERVED. ALL WRONGS REVERSED
+               ALL RIGHTS RESERVED. ALL WRONGS REVERSED Made with (x² + y² – 1)³
+               = x² y³ in Khi
             </p>
             <button
                type="button"
-               className="flex gap-2 md:gap-6 text-[14px] md:text-[20px]"
-               onClick={backToTop}
+               className="flex gap-2 md:gap-6 text-[14px] md:text-[18px] underline-animation "
             >
-               backToTop
+               Back To Top
             </button>
          </div>
       </footer>
