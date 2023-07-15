@@ -1,0 +1,25 @@
+.title-contact {
+   font-size: clamp(24rem, 24vw, 45rem);
+}
+.title {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 500;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   display: block;
+   z-index: 1;
+}
+.wrapper-rolling-text {
+   white-space: nowrap;
+   position: absolute;
+   top: 46vh;
+   transform: translateY(-50%);
+   user-select: none;
+}
+
+.rolling-text {
+   display: inline-block;
+   pointer-events: none;
+   will-change: transform;
+}
