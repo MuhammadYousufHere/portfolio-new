@@ -17,7 +17,7 @@ export function ThemeSwitch() {
          id="theme-btn"
          aria-label="Toggle Dark Mode"
          type="button"
-         className="ml-1 h-8 w-8 rounded p-1"
+         className="ml-1 h-8 w-8 rounded p-1 text-slate-900 dark:text-white"
          whileTap={{
             scale: 0.7,
             rotate: 360,
