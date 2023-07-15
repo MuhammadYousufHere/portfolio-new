@@ -3,7 +3,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { useEffect, useRef, type RefObject } from 'react';
 
 export type CursorTypes = 'normal' | 'left' | 'right' | 'hover';
@@ -41,6 +40,7 @@ export function Cursor({
       return () => {
          document.removeEventListener('mousemove', mouseMoveEvent);
       };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, []);
 
    return (
