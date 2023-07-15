@@ -1,14 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, type ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import { type IconType } from 'react-icons';
 import {
    RiCake2Fill as Cake,
    RiBriefcaseLine as Suitcase,
 } from 'react-icons/ri';
+
 // import { SlGraduation as Graduation } from 'react-icons/sl';
-import { useLocomotiveScroll } from 'react-locomotive-scroll';
+// import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 type Event = {
    title: string;
@@ -135,12 +136,12 @@ interface Props {
 }
 const AboutMeList = ({ children }: Props) => {
    const isMd = true;
-   const { scroll } = useLocomotiveScroll();
+   // const { scroll } = useLocomotiveScroll();
 
-   useEffect(() => {
-      scroll?.update();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-   }, [isMd]);
+   // useEffect(() => {
+   //    scroll?.update();
+   //    // eslint-disable-next-line react-hooks/exhaustive-deps
+   // }, [isMd]);
    return isMd ? (
       <div
          data-scroll
